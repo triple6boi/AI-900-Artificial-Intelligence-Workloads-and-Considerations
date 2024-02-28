@@ -16,7 +16,7 @@ face_client = FaceClient(cog_endpoint, CognitiveServicesCredentials(cog_key))
 
 
 # Change the URL between the quotes below to run your own faces through the Azure Face Service!
-face_to_analyze = "https://raw.githubusercontent.com/ACloudGuru/content-AI-900/main/images/image-analysis/2-azureface-couple.jpg"
+face_to_analyze = "https://raw.githubusercontent.com/pluralsight-cloud/AI-900-Artificial-Intelligence-Workloads-and-Considerations/main/images/image-analysis/2-azureface-couple.jpg"
 
 detected_faces = face_client.face.detect_with_url(url=face_to_analyze, 
 return_face_attributes=list(['headPose','glasses','accessories','blur','noise','occlusion']), 
