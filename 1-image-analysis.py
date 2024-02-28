@@ -17,7 +17,7 @@ computervision_client = ComputerVisionClient(cog_endpoint, CognitiveServicesCred
 
 
 # Change the URL between the quotes below to run your own images!
-image_to_analyze = "https://raw.githubusercontent.com/ACloudGuru/content-AI-900/main/images/image-analysis/1-computervision-couple.jpg"
+image_to_analyze = "https://raw.githubusercontent.com/pluralsight-cloud/AI-900-Artificial-Intelligence-Workloads-and-Considerations/main/images/image-analysis/1-computervision-couple.jpg"
 
 
 image_analysis = computervision_client.analyze_image(image_to_analyze,visual_features=[VisualFeatureTypes.description,
