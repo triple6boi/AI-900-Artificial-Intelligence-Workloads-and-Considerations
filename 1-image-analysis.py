@@ -11,13 +11,13 @@ class colors:
     reset = '\033[0m'
 
 # Paste your endpoint and key below
-cog_endpoint = "Paste_endpoint_here"
-cog_key = "Paste_key_here"
+cog_endpoint = "https://ai-letsgo.cognitiveservices.azure.com/"
+cog_key = "1900553b76394f80af2a5ed7d1c200e0"
 computervision_client = ComputerVisionClient(cog_endpoint, CognitiveServicesCredentials(cog_key))
 
 
 # Change the URL between the quotes below to run your own images!
-image_to_analyze = "https://raw.githubusercontent.com/pluralsight-cloud/AI-900-Artificial-Intelligence-Workloads-and-Considerations/main/images/image-analysis/1-computervision-couple.jpg"
+image_to_analyze = "https://media.istockphoto.com/id/1171481674/photo/ferret-on-a-lead-in-grass.jpg?s=1024x1024&w=is&k=20&c=PHUMRs28OUQteSp7DeHX-j0LkTd_N5lBT9Ow2-DCVSc="
 
 
 image_analysis = computervision_client.analyze_image(image_to_analyze,visual_features=[VisualFeatureTypes.description,
